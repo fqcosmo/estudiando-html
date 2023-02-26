@@ -64,7 +64,7 @@ body{
     grid-template-columns: repeat(4,1fr);
 }
 /*Estilos para el contenido*/
-section h1,h3,p{
+section h1,h3,p, a{
     padding: 15px;
 }
 .listas_tecnicas{
@@ -77,6 +77,15 @@ section h1,h3,p{
     align-items: center;
     color: #ffff;
 }
+.card_images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+}
+.card_images_container{
+    background: #e5e3e3;
+    border-radius: 20px;
+}
 @media(max-width:760px){
     .navegacion_principal{
         flex-direction: column;
@@ -88,5 +97,8 @@ section h1,h3,p{
     .listas_tecnicas{
         grid-template-columns: repeat(2,1fr);
         grid-gap: 10px;
+    }
+    .card_images{
+        grid-template-columns: repeat(1,1fr);
     }
 }
