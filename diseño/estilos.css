@@ -86,6 +86,19 @@ section h1,h3,p, a{
     background: #e5e3e3;
     border-radius: 20px;
 }
+
+.footer_principal{
+    background: #666;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer_principal li{
+    padding: 20px;
+    list-style: none;
+    color: #E5E1DF;
+    font-weight: 700;
+}
 @media(max-width:760px){
     .navegacion_principal{
         flex-direction: column;
@@ -100,5 +113,8 @@ section h1,h3,p, a{
     }
     .card_images{
         grid-template-columns: repeat(1,1fr);
+    }
+    .footer_principal{
+        grid-template-columns: repeat(2,1fr);
     }
 }
